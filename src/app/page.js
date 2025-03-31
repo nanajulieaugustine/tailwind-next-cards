@@ -1,3 +1,5 @@
+import ThemeToggle from "@/components/theme-toggle";
+
 export default function Home() {
   const data = [
     {
@@ -19,6 +21,7 @@ export default function Home() {
   ];
   return (
     <main>
+      <ThemeToggle />
       <ul>
         {data.map((item, i) => (
           <Card key={i} {...item} />
