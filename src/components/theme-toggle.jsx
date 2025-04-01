@@ -13,7 +13,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="rounded-md bg-indigo-700 text-white p-2 text-sm font-semibold absolute top-4 right-4"
+      className="cursor-pointer rounded-md bg-indigo-700 text-white p-2 text-sm font-semibold absolute top-4 right-4"
     >
       Switch theme
     </button>

@@ -33,14 +33,15 @@ export default function Home() {
 
 function Card({ title, category }) {
   return (
-    <li>
-      <a href="#0">
+    <li class="group bg-slate-100 p-4 justify-center max-w-[400px] hover:bg-slate-200 transition duration-350 ease-in-out dark:bg-slate-800 dark:hover:bg-slate-700">
+      <a href="#0" class="flex gap-4">
         <div className="aspect-square w-10 rounded-md bg-[#cbd5e1]"></div>
-        <div>
-          <p>{title}</p>
+        <div class="dark:text-slate-50">
+          <p class="font-bold">{title}</p>
           <small>{category}</small>
         </div>
         <svg
+          class="text-purple-600 ml-auto opacity-0 group-hover:opacity-100 transition duration-350 ease-in-out dark:hover:text-purple-400"
           xmlns="http://www.w3.org/2000/svg"
           width="32"
           height="32"
